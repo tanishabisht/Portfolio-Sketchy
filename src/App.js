@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter basename='/Jayvardhan-Portfolio'>
+    <BrowserRouter>
       <div className="app">
         <Navbar/>
         <Switch>
