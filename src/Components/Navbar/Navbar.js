@@ -7,7 +7,7 @@ import './navbar.scss'
 const NavbarComponent = () => {
   return (
     <Navbar collapseOnSelect expand="lg" variant="light">
-        <Navbar.Brand className='nav_logo' href="/home">JAYVARDHAN RATHI</Navbar.Brand>
+        <Navbar.Brand className='nav_logo' href="#/home">JAYVARDHAN RATHI</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <nav className="ml-auto">
