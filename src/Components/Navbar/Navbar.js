@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { nameCapitals } from '../../Content/variables'
 import './navbar.scss';
 
 const NavbarComponent = () => {
@@ -9,7 +10,7 @@ const NavbarComponent = () => {
 
   return (
     <Navbar collapseOnSelect expand="lg" variant="light">
-      <Navbar.Brand className='nav_logo' href="#/home">JAYVARDHAN RATHI</Navbar.Brand>
+      <Navbar.Brand className='nav_logo' href="#/home">{nameCapitals}</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <nav className="ml-auto">

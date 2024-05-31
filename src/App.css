@@ -2,5 +2,4 @@
     background: url(./Images/bg.png) no-repeat center center fixed;
     background-size: cover;
     padding: 1rem;
-    height: calc(100vh - 2rem);
 }

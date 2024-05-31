@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Home, Projects, Initiatives } from './Pages';
 import { Navbar, SideLinks, Footer } from './Components';
+import { fbLink, instaLink, linkedInLink, mediumLink, twitterLink, youTubeLink } from './Content/variables'
 import './App.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route path="/initiatives" element={<Initiatives />} />
         </Routes>
         <Footer />
-        <SideLinks fb="#" insta="#" linkedIn="#" medium="#" twitter="#" utube="#" />
+        <SideLinks fb={fbLink} insta={instaLink} linkedIn={linkedInLink} medium={mediumLink} twitter={twitterLink} utube={youTubeLink} />
       </div>
     </HashRouter>
   );
