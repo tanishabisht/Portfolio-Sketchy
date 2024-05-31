@@ -7,7 +7,7 @@ const ProjectCard = ({title, gitHubLink, siteLink, imgSrc}) => {
       <div className='projCard_container'>
         <div className='projCard_header'>
             <span className='projCard_title'>{title}</span>
-            <span className='projCard_links'><a href={siteLink}><ProjectsShareIcon/></a><a href={gitHubLink}><ProjectsGithubIcon/></a></span>
+            <span className='projCard_links'><a target='_blank' href={siteLink}><ProjectsShareIcon/></a><a target='_blank' href={gitHubLink}><ProjectsGithubIcon/></a></span>
         </div>
         <img className='projCard_image' src={imgSrc} alt='img not found'/>
       </div>
