@@ -4,7 +4,7 @@ import './pages.scss'
 
 const Home = () => {
     return (
-        <div style={{display:'flex', height:'90vh'}}>
+        <div className='home_container'>
             <div className='container my-auto'>
                 <div className='row'>
                     <div className='col-sm-12 col-md-6 col-lg-6 my-auto' style={{paddingTop:'2em', paddingLeft:'4em'}}>

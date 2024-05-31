@@ -11,3 +11,8 @@
     padding-left:4em; 
     padding-right:4em;
 }
+
+.home_container {
+    display: flex;
+    height: calc(100vh - 7rem);
+}
