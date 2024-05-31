@@ -5,7 +5,7 @@ import './pages.scss'
 
 const Initiatives = () => {
     return (
-        <div style={{display:'flex'}}>
+        <div className='initiative_page_container'>
             <div className='container my-auto'>
                 <div className='row'>
                     <div className='col-2'></div>
@@ -18,7 +18,7 @@ const Initiatives = () => {
                     <div className='col-sm-12 col-lg-6 my-auto initiativeSVG'>
                         <img src={initiativeLogo} alt='initiative img not found' />
                     </div>
-                    <div className='col-sm-12 col-lg-6 my-auto' style={{paddingTop:'2em', paddingLeft:'4em'}}>
+                    <div className='col-sm-12 col-lg-6 my-auto right_col_scroll'>
                         {initiativePageAllInitiatives.map(({company, post, duration, desc}) => <InitiativeCard company={company} post={post} vertical={duration} desc={desc} /> )}
                     </div>
                 </div>

@@ -16,3 +16,16 @@
     display: flex;
     height: calc(100vh - 7rem);
 }
+
+.initiative_page_container {
+    display: flex;
+    height: calc(100vh - 7rem);
+}
+
+.right_col_scroll {
+    padding-top:'2em'; 
+    padding-left:'4em';
+    position:relative;
+    overflow-y:auto;
+    height: 34rem;
+}
