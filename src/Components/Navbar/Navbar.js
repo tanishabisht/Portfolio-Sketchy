@@ -1,24 +1,25 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import {Navbar} from 'react-bootstrap'
-import {NavLink} from 'react-router-dom';
-import './navbar.scss'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import './navbar.scss';
 
 const NavbarComponent = () => {
+  // Helper function to determine the link's active state
+  const getNavLinkClass = ({ isActive }) => (isActive ? 'secLink secLinkActive' : 'secLink');
+
   return (
     <Navbar collapseOnSelect expand="lg" variant="light">
-        <Navbar.Brand className='nav_logo' href="#/home">JAYVARDHAN RATHI</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Brand className='nav_logo' href="#/home">JAYVARDHAN RATHI</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <nav className="ml-auto">
-          <NavLink activeClassName='secLinkActive' className='secLink' to="/home">Home</NavLink>
-          <NavLink activeClassName='secLinkActive' className='secLink' to="/projects">Projects</NavLink>
-          <NavLink activeClassName='secLinkActive' className='secLink' to="/initiatives">Initiatives</NavLink>
+          <NavLink className={getNavLinkClass} to="/home">Home</NavLink>
+          <NavLink className={getNavLinkClass} to="/projects">Projects</NavLink>
+          <NavLink className={getNavLinkClass} to="/initiatives">Initiatives</NavLink>
         </nav>
-        </Navbar.Collapse>
+      </Navbar.Collapse>
     </Navbar>
   )
 }
 
-
-export default NavbarComponent
+export default NavbarComponent;
