@@ -1,5 +1,4 @@
 # Minimal and sketch themed personal website
-Link to the portfolio: https://tanishabisht.github.io/portfolio-template-2/
 
 ![Portfolio template - sketch theme](demo/demo.gif)
 
